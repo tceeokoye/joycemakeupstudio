@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Joyce Make-up Studio</title>
+    <title>Joyce Make-up Studio</title>
 
-  <!-- SEO Meta Description -->
-  <meta
-    name="description"
-    content="Joyce Make-up Studio offers professional bridal, event, and glam makeup services. Enhancing natural beauty with flawless, long-lasting looks for every occasion."
-  />
+    <!-- SEO Meta Description -->
+    <meta
+      name="description"
+      content="Joyce Make-up Studio offers professional bridal, event, and glam makeup services. Enhancing natural beauty with flawless, long-lasting looks for every occasion."
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/img/fevicon.jpeg" />
-  <!-- Optional: for better browser support -->
-  <link rel="apple-touch-icon" href="/img/fevicon.jpeg" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/fevicon.jpeg" />
+    <!-- Optional: for better browser support -->
+    <link rel="apple-touch-icon" href="/img/fevicon.jpeg" />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
   <body>
     <!-- Header -->
@@ -70,6 +69,35 @@
         <img src="img/profile-photo.jpeg" alt="Joyce Make-up Artist" />
       </div>
     </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="underline"></div>
+
+      <p style="text-align: center; max-width: 800px; margin: 0 auto">
+        I'm an expert in bridal, model, and special occasion makeup. I create
+        personalized looks that enhance each client’s natural beauty. I love
+        working closely with clients to understand their vision and deliver
+        stunning results. My expertise includes makeup application, sanitation,
+        and excellent client communication.
+      </p>
+
+      <div class="stats">
+        <div>
+          <h3 class="count" data-target="3">0</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div>
+          <h3 class="count" data-target="100">0</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div>
+          <h3 class="count" data-target="100">0</h3>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Experience -->
     <section id="experience">
       <h2>Experience</h2>
@@ -81,24 +109,29 @@
           <h3>Owner & Makeup Artist</h3>
           <p>
             Specialize in creating customized makeup looks for various events,
-            developing personalized designs, and building strong client
-            relationships.
+            Developing and executing personalized makeup designs, Building
+            strong relationships with clients and provide exceptional service,
+            Staying updated with the latest makeup trends.
           </p>
         </div>
         <div class="job">
           <span class="date">2020-2024</span>
           <h3>Freelance Makeup Artist</h3>
           <p>
-            Provided makeup services for events, collaborated with clients to
-            understand their vision, and delivered high-quality applications.
+            Providing makeup services for various events and clients, Developed
+            a portfolio showcasing expertise in different styles, Collaborated
+            with clients to understand their vision, Delivered high-quality
+            makeup applications.
           </p>
         </div>
         <div class="job">
           <span class="date">2023-2026</span>
           <h3>Makeup Artist</h3>
           <p>
-            Applied makeup in a fast-paced environment, improved sanitation
-            skills, and consistently received positive feedback.
+            Applied makeup for clients in a fast-paced environment, Developed
+            skills in sanitation and client communication, Worked closely with
+            clients to understand their needs, Consistently received positive
+            feedback
           </p>
         </div>
       </div>
@@ -112,16 +145,17 @@
         <div class="school">
           <h3>University of Nigeria, Nsukka</h3>
           <p>
-            BSc Political Science, 2:1 Honors. Graduated with strong academic
-            record and analytical skills.
+            Bachelor of Science in Political Science, 2:1 Honors, Graduated with
+            a strong academic record and developed skills in research, analysis,
+            and critical thinking.
           </p>
         </div>
 
         <div class="school">
           <h3>Federal Government College Enugu</h3>
           <p>
-            Secondary School Certificate, graduated in 2019 with excellent
-            academic standing.
+            Secondary School Certificate, Graduated in 2019 with excellent
+            academic standing and with a strong academic record.
           </p>
         </div>
       </div>
@@ -154,6 +188,7 @@
     <section id="portfolio">
       <h2>Latest Works</h2>
       <div class="underline"></div>
+
       <div class="projects">
         <div class="project">
           <img src="img/project-one.jpeg" alt="" />
@@ -171,9 +206,24 @@
           <img src="img/project-four.jpeg" alt="" />
           <p>Induction Makeup</p>
         </div>
+        <div class="project">
+          <img src="img/project-five.jpeg" alt="" />
+          <p>Traditional Bridal Makeup</p>
+        </div>
+        <div class="project">
+          <img src="img/project-six.jpeg" alt="" />
+          <p>Natural Glam Makeup</p>
+        </div>
+        <div class="project">
+          <img src="img/project-seven.jpeg" alt="" />
+          <p>Promotional Makeup</p>
+        </div>
+        <div class="project">
+          <img src="img/project-eight.jpeg" alt="" />
+          <p>Birthday Makeup</p>
+        </div>
       </div>
     </section>
-
     <!-- Contact -->
     <section id="contact">
       <h2>Contact Me</h2>
@@ -200,41 +250,7 @@
         >
       </p>
     </footer>
-
-    <script>
-      // Intersection Observer
-      const sections = document.querySelectorAll("section");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("visible");
-          });
-        },
-        { threshold: 0.1 }
-      );
-      sections.forEach((section) => observer.observe(section));
-
-      // WhatsApp Contact Form
-      const contactForm = document.getElementById("contactForm");
-      contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const name = document.getElementById("name").value.trim();
-        const message = document.getElementById("message").value.trim();
-        const whatsappNumber = "2348107165245"; 
-        const urlMessage = `Hello Joyce, my name is ${name}. ${message}`;
-        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-          urlMessage
-        )}`;
-        window.open(whatsappURL, "_blank");
-      });
-
-      // Hamburger Menu Toggle
-      const hamburger = document.getElementById("hamburger");
-      const navMenu = document.getElementById("navMenu");
-      hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-        hamburger.classList.toggle("open");
-      });
-    </script>
+    <script src="/count.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
